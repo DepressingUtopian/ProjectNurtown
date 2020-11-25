@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu {
+    margin-right: 74px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 60px;
+}
