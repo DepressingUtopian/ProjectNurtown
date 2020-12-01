@@ -3,3 +3,54 @@
     display: grid;
     grid-template-rows: 1fr 70px;
 }
+
+.footer--bar {
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 58px;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    margin-left: 99px;
+}
+
+.footer-menu a {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-menu .menu ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu .menu ul li {
+    margin-bottom: 16px;
+}
+
+.contact-wrapper {
+    margin-left: 157px;
+}
+
+.social-wrapper {
+    margin-right: 212px;
+}
+
+.social-wrapper .social-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer--bar .text-header {
+    margin-bottom: 25px;
+} 
+
+.contact-wrapper .text-with-logo {
+    display: flex;
+    margin-bottom: 32px;
+}

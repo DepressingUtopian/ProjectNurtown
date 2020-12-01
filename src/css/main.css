@@ -24,3 +24,7 @@ a {
 .footer {
     grid-area: footer;
 }
+
+ul {
+    list-style-type: none;
+}

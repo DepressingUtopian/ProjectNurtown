@@ -9,11 +9,7 @@
     margin-right: 74px;
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
+.header .menu li {
     display: inline-block;
     margin-right: 60px;
 }
