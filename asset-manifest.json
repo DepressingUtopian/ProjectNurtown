@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ProjectNurtown/static/css/main.394d5630.chunk.css",
-    "main.js": "/ProjectNurtown/static/js/main.33057478.chunk.js",
-    "main.js.map": "/ProjectNurtown/static/js/main.33057478.chunk.js.map",
+    "main.css": "/ProjectNurtown/static/css/main.4b01979f.chunk.css",
+    "main.js": "/ProjectNurtown/static/js/main.58a059aa.chunk.js",
+    "main.js.map": "/ProjectNurtown/static/js/main.58a059aa.chunk.js.map",
     "runtime-main.js": "/ProjectNurtown/static/js/runtime-main.44e32ccf.js",
     "runtime-main.js.map": "/ProjectNurtown/static/js/runtime-main.44e32ccf.js.map",
     "static/js/2.b30e1c07.chunk.js": "/ProjectNurtown/static/js/2.b30e1c07.chunk.js",
@@ -10,15 +10,22 @@
     "static/js/3.f5d4e7d8.chunk.js": "/ProjectNurtown/static/js/3.f5d4e7d8.chunk.js",
     "static/js/3.f5d4e7d8.chunk.js.map": "/ProjectNurtown/static/js/3.f5d4e7d8.chunk.js.map",
     "index.html": "/ProjectNurtown/index.html",
-    "static/css/main.394d5630.chunk.css.map": "/ProjectNurtown/static/css/main.394d5630.chunk.css.map",
+    "static/css/main.4b01979f.chunk.css.map": "/ProjectNurtown/static/css/main.4b01979f.chunk.css.map",
     "static/js/2.b30e1c07.chunk.js.LICENSE.txt": "/ProjectNurtown/static/js/2.b30e1c07.chunk.js.LICENSE.txt",
+    "static/media/facebook.e0b89ca8.svg": "/ProjectNurtown/static/media/facebook.e0b89ca8.svg",
+    "static/media/gps.709e7fcb.svg": "/ProjectNurtown/static/media/gps.709e7fcb.svg",
+    "static/media/linked_in.47be0d3a.svg": "/ProjectNurtown/static/media/linked_in.47be0d3a.svg",
     "static/media/logo.a7af73d9.svg": "/ProjectNurtown/static/media/logo.a7af73d9.svg",
-    "static/media/logo_white.7403a92b.svg": "/ProjectNurtown/static/media/logo_white.7403a92b.svg"
+    "static/media/logo_white.7403a92b.svg": "/ProjectNurtown/static/media/logo_white.7403a92b.svg",
+    "static/media/mail.4aba332e.svg": "/ProjectNurtown/static/media/mail.4aba332e.svg",
+    "static/media/phone.3885308c.svg": "/ProjectNurtown/static/media/phone.3885308c.svg",
+    "static/media/pininterest.7577cf83.svg": "/ProjectNurtown/static/media/pininterest.7577cf83.svg",
+    "static/media/twitter.d14ca36b.svg": "/ProjectNurtown/static/media/twitter.d14ca36b.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.44e32ccf.js",
     "static/js/2.b30e1c07.chunk.js",
-    "static/css/main.394d5630.chunk.css",
-    "static/js/main.33057478.chunk.js"
+    "static/css/main.4b01979f.chunk.css",
+    "static/js/main.58a059aa.chunk.js"
   ]
 }
