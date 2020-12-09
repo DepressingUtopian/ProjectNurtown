@@ -1,0 +1,87 @@
+.content {
+    margin-bottom: 90px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    height: 829px;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.button-image {
+    width: 54px;
+    height: 54px;
+}
+
+.button-image:active {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.slider-header {
+    margin: 336px 69px 90px 0;
+}
+
+.slider-switch {
+    width: 130px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.slide-number-pad {
+    width: 142px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-number {
+    color: #BDBDBD;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.divide-icon {
+    width: 42px;
+}
+
+.slider-post {
+    width: 770px;
+    height: 829px;
+    position: relative;
+}
+
+.slider-post .post-image {
+    height: 829px;
+    position: relative;
+}
+
+.slider-post .button__open-post {
+    width: 222px;
+    height: 71px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.slider-post .button__open-post > div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-post .button__open-post .icon{
+    
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+
+}
+
+

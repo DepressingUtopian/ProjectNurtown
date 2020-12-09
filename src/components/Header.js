@@ -6,7 +6,7 @@ import logoImage from '../resource/img/logo.svg'
 class Header extends React.Component {
     render() {
         return (
-        <section class='header'>
+        <section className='header'>
             <Logo className="siteLogo" width="70px" height="44px" imageUrl={logoImage}></Logo>
             <Menu/>
         </section>

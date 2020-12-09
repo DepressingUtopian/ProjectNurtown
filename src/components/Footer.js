@@ -37,10 +37,10 @@ class Footer extends React.Component {
                     <div className="social-wrapper">
                         <TextHeader text="Социальные сети" lineHeight="20px" fontSize="16px" color="white" fontStyle="normal" fontWeight="bold"></TextHeader>
                         <div className="social-panel">
-                        <Logo className="facebookLogo" width="16px" height="16px" margin="0 0 0 0" imageUrl={facebookImage}></Logo>
-                        <Logo className="twitterLogo" width="16px" height="16px" margin="0 0 0 0" imageUrl={twitterImage}></Logo>
-                        <Logo className="linkedInLogo" width="16px" height="16px" margin="0 0 0 0" imageUrl={linkedInImage}></Logo>
-                        <Logo className="pininterestImageLogo" width="16px" height="16px" margin="0 0 0 0" imageUrl={pininterestImage}></Logo>
+                        <Logo className="facebookLogo" width="20px" height="20px" margin="0 0 0 0" imageUrl={facebookImage}></Logo>
+                        <Logo className="twitterLogo" width="20px" height="20px" margin="0 0 0 0" imageUrl={twitterImage}></Logo>
+                        <Logo className="linkedInLogo" width="20px" height="20px" margin="0 0 0 0" imageUrl={linkedInImage}></Logo>
+                        <Logo className="pininterestImageLogo" width="20px" height="20px" margin="0 0 0 0" imageUrl={pininterestImage}></Logo>
                         </div>
                     </div>
 

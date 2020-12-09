@@ -4,7 +4,7 @@ import MenuItem from './MenuItem';
 class Menu extends React.Component {
     render() {
         return (
-            <div class="menu">
+            <div className="menu">
                 <ul>
                     <li><MenuItem linkUrl="./" content="ГЛАВНАЯ" /></li>
                     <li><MenuItem linkUrl="./" content="ГАЛЕРЕЯ" /></li>
