@@ -17,7 +17,7 @@ const Footer = () => {
     return (
         <section className="footer">
             <section className="footer--bar">
-                <Logo className="siteLogo" width="145px" height="94px" margin="0 0 0 116px" imageUrl={logoImage}></Logo>
+                <Logo className="siteLogo" width="170px" height="94px" margin="0 0 0 116px" imageUrl={logoImage}></Logo>
                 <div className="footer-menu">
                     <TextHeader text="Информация" styles={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold" }}></TextHeader>
                     <Menu></Menu>

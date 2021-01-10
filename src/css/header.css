@@ -13,3 +13,8 @@
     display: inline-block;
     margin-right: 60px;
 }
+
+.header .menu ul li:first-child {
+    border-top: gray solid 1px;
+    border-bottom: gray solid 1px;
+}
