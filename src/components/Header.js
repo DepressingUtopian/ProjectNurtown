@@ -3,15 +3,13 @@ import Logo from './Logo';
 import Menu from './Menu';
 import logoImage from '../resource/img/logo.svg'
 
-class Header extends React.Component {
-    render() {
-        return (
+const Header = () => {
+    return (
         <section className='header'>
             <Logo className="siteLogo" width="70px" height="44px" imageUrl={logoImage}></Logo>
-            <Menu/>
+            <Menu />
         </section>
-        );
-    }
+    );
 }
 
 export default Header;

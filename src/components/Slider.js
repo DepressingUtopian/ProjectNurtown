@@ -1,47 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SliderHeader from './SliderHeader';
 import SliderSwitch from './SliderSwitch';
 import SlideNumberPad from './SlideNumberPad';
 import SliderPost from './SliderPost';
-import ImagePost from '../resource/img/post-img.svg'
 import SlideItem from './SlideItem'
 
 const imageUrls = [
-    'src/resource/img/slides/1.svg',
-    'src/resource/img/slides/2.jpg',
-    'src/resource/img/slides/3.jpg',
-    'src/resource/img/slides/4.jpg',
-    'src/resource/img/slides/5.jpg',
-    'src/resource/img/slides/6.jpg'
+    '/slides/2.jpg',
+    '/slides/1.svg',
+    '/slides/3.jpg',
+    '/slides/4.jpg',
+    '/slides/5.jpg',
+    '/slides/6.jpg'
 
 ]
 
-class Slider extends React.Component {
-    constructor(props) {
-        super(props);
-        this.slideItems = [];
-        this.initSlideItems.call(this);
-
-
-    }
-
-    initSlideItems() {
+const Slider = () => {
+    const slideItems = [];
+    const initSlideItems = () => {
         imageUrls.forEach(element => {
-            this.slideItems.push( new SlideItem(element,'#'));
+            slideItems.push(new SlideItem(process.env.PUBLIC_URL + element, '#'));
         });
-        
     }
 
-    render() {
-        return (
-        <section className='slider'>
-           <SliderHeader/>
-           <SliderSwitch/>
-           <SlideNumberPad leftNumber="01" rightNumber="02"/>
-           <SliderPost backgroundImage={ImagePost}/>
-        </section>
-        );
+    initSlideItems();
+    const [currentSlideItem, setCurrentSlideItem] = useState(slideItems[0]);
+    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
+    const onChangeSlide = (slideIndex) => {
+        let newIndex = 0;
+        if (slideIndex > slideItems.length - 1)
+            newIndex = 0;
+        else if (slideIndex < 0)
+            newIndex = slideItems.length - 1;
+        else
+            newIndex = slideIndex;
+        let item = slideItems[newIndex];
+        setCurrentSlideItem(item);
+        setCurrentSlideIndex(newIndex);
+        return newIndex;
     }
+
+    const normalizeNum = (num) => {
+        return "0" + (num + 1);
+    }
+    return (
+        <section className='slider'>
+            <SliderHeader />
+            <SliderSwitch onChangeSlide={onChangeSlide} slideIndex={currentSlideIndex} />
+            <SlideNumberPad leftNumber={normalizeNum(currentSlideIndex)} rightNumber={normalizeNum(slideItems.length - 1)} />
+            <SliderPost slideItem={currentSlideItem} />
+        </section>
+    );
 }
 
 export default Slider;

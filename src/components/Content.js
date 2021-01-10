@@ -1,14 +1,12 @@
 import React from 'react';
 import Slider from './Slider';
 
-class Content extends React.Component {
-    render() {
+const Content = () => {
         return (
         <section className='content'>
             <Slider/>
-        </section>);
-    }
+        </section>
+        );
 }
-
 
 export default Content;

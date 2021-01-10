@@ -70,14 +70,12 @@
 }
 
 .slider-post .button__open-post > div{
-    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .slider-post .button__open-post .icon{
-    
     width: 24px;
     height: 24px;
     margin-left: 12px;

@@ -1,17 +1,13 @@
 import React from 'react';
 
-class Icon extends React.Component {
-
-    styles = {
-        background: ''
-    }
-
-    render() {
-        this.styles.background = `url(${this.props.backgroundImage}) center no-repeat`;
-        return (
-            <div className="icon" style={this.styles}></div>
-        );
-    }
+const Icon = ({ backgroundImage }) => {
+    const styles = {
+        background: (backgroundImage !== undefined) ?
+            `url(${backgroundImage}) center no-repeat` : ''
+    };
+    return (
+        <div className="icon" style={styles}></div>
+    );
 }
 
 export default Icon;
