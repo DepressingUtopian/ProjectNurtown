@@ -26,22 +26,22 @@ const Footer = () => {
                     <TextHeader text="Контакты" styles={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold" }}></TextHeader>
                     <TextWithLogo
                         text="100000, Республика  Казахстан, <br />  г. Караганда, ул. Телевизионная 10"
-                        stylesText={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold", marginLeft:'20px' }}
-                        stylesLogo={{ width: "70px", height: "44px", imageUrl:gpsImage  }}
+                        stylesText={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold", marginLeft: '20px' }}
+                        stylesLogo={{ width: "70px", height: "44px", imageUrl: gpsImage }}
                         classNameLogo="gpsLogo" />
                     <TextWithLogo
                         text="+7 (701) 77 76 811"
-                        stylesText={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold", marginLeft:'20px' }}
-                        stylesLogo={{ width: "70px", height: "44px", imageUrl:phoneImage }} 
+                        stylesText={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold", marginLeft: '20px' }}
+                        stylesLogo={{ width: "70px", height: "44px", imageUrl: phoneImage }}
                         classNameLogo="phoneLogo" />
                     <TextWithLogo
                         text="Galym.sultanov@mail.ru"
-                        stylesText={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold", marginLeft:'20px' }}
-                        stylesLogo={{width: "70px", height: "44px", imageUrl: mailImage }} 
+                        stylesText={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold", marginLeft: '20px' }}
+                        stylesLogo={{ width: "70px", height: "44px", imageUrl: mailImage }}
                         classNameLogo="mailLogo" />
                 </div>
                 <div className="social-wrapper">
-                    <TextHeader text="Социальные сети" styles={{lineHeight:"20px", fontSize:"16px", color:"white", fontStyle:"normal", fontWeight:"bold"}}/>
+                    <TextHeader text="Социальные сети" styles={{ lineHeight: "20px", fontSize: "16px", color: "white", fontStyle: "normal", fontWeight: "bold" }} />
                     <div className="social-panel">
                         <Logo className="facebookLogo" width="20px" height="20px" margin="0 0 0 0" imageUrl={facebookImage}></Logo>
                         <Logo className="twitterLogo" width="20px" height="20px" margin="0 0 0 0" imageUrl={twitterImage}></Logo>
@@ -50,7 +50,9 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-            <section className="footer--copyright" />
+            <section className="footer--copyright">
+                <p className="footer--copyright__text">© {new Date().getFullYear()} Digital Project || DepressingUtopian. Все права защищены.</p>
+            </section>
         </section>
     );
 }

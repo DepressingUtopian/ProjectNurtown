@@ -54,3 +54,15 @@
     display: flex;
     margin-bottom: 32px;
 }
+
+.footer--copyright {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    line-height: 22px;
+    font-size: 12px;
+}
+
+.footer--copyright .footer--copyright__text {
+    color:rgba(200, 200, 200, 0.5);
+}
