@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ProjectNurtown/static/css/main.022a1be5.chunk.css",
-    "main.js": "/ProjectNurtown/static/js/main.e22c0b9a.chunk.js",
-    "main.js.map": "/ProjectNurtown/static/js/main.e22c0b9a.chunk.js.map",
-    "runtime-main.js": "/ProjectNurtown/static/js/runtime-main.2272a925.js",
-    "runtime-main.js.map": "/ProjectNurtown/static/js/runtime-main.2272a925.js.map",
-    "static/js/2.0f41ddc1.chunk.js": "/ProjectNurtown/static/js/2.0f41ddc1.chunk.js",
-    "static/js/2.0f41ddc1.chunk.js.map": "/ProjectNurtown/static/js/2.0f41ddc1.chunk.js.map",
-    "static/js/3.b72bc0e1.chunk.js": "/ProjectNurtown/static/js/3.b72bc0e1.chunk.js",
-    "static/js/3.b72bc0e1.chunk.js.map": "/ProjectNurtown/static/js/3.b72bc0e1.chunk.js.map",
+    "main.css": "/ProjectNurtown/static/css/main.69d77d89.chunk.css",
+    "main.js": "/ProjectNurtown/static/js/main.7d1a93aa.chunk.js",
+    "main.js.map": "/ProjectNurtown/static/js/main.7d1a93aa.chunk.js.map",
+    "runtime-main.js": "/ProjectNurtown/static/js/runtime-main.634d18fa.js",
+    "runtime-main.js.map": "/ProjectNurtown/static/js/runtime-main.634d18fa.js.map",
+    "static/js/2.03f2ddfc.chunk.js": "/ProjectNurtown/static/js/2.03f2ddfc.chunk.js",
+    "static/js/2.03f2ddfc.chunk.js.map": "/ProjectNurtown/static/js/2.03f2ddfc.chunk.js.map",
+    "static/js/3.66b0ff28.chunk.js": "/ProjectNurtown/static/js/3.66b0ff28.chunk.js",
+    "static/js/3.66b0ff28.chunk.js.map": "/ProjectNurtown/static/js/3.66b0ff28.chunk.js.map",
     "index.html": "/ProjectNurtown/index.html",
-    "static/css/main.022a1be5.chunk.css.map": "/ProjectNurtown/static/css/main.022a1be5.chunk.css.map",
-    "static/js/2.0f41ddc1.chunk.js.LICENSE.txt": "/ProjectNurtown/static/js/2.0f41ddc1.chunk.js.LICENSE.txt",
+    "static/css/main.69d77d89.chunk.css.map": "/ProjectNurtown/static/css/main.69d77d89.chunk.css.map",
+    "static/js/2.03f2ddfc.chunk.js.LICENSE.txt": "/ProjectNurtown/static/js/2.03f2ddfc.chunk.js.LICENSE.txt",
     "static/media/arrow-left.72dd72df.svg": "/ProjectNurtown/static/media/arrow-left.72dd72df.svg",
     "static/media/arrow-right.e4f8bee9.svg": "/ProjectNurtown/static/media/arrow-right.e4f8bee9.svg",
     "static/media/divideLine.08309943.svg": "/ProjectNurtown/static/media/divideLine.08309943.svg",
@@ -23,13 +23,12 @@
     "static/media/mail.4aba332e.svg": "/ProjectNurtown/static/media/mail.4aba332e.svg",
     "static/media/phone.3885308c.svg": "/ProjectNurtown/static/media/phone.3885308c.svg",
     "static/media/pininterest.7577cf83.svg": "/ProjectNurtown/static/media/pininterest.7577cf83.svg",
-    "static/media/post-img.a574bee8.svg": "/ProjectNurtown/static/media/post-img.a574bee8.svg",
     "static/media/twitter.d14ca36b.svg": "/ProjectNurtown/static/media/twitter.d14ca36b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2272a925.js",
-    "static/js/2.0f41ddc1.chunk.js",
-    "static/css/main.022a1be5.chunk.css",
-    "static/js/main.e22c0b9a.chunk.js"
+    "static/js/runtime-main.634d18fa.js",
+    "static/js/2.03f2ddfc.chunk.js",
+    "static/css/main.69d77d89.chunk.css",
+    "static/js/main.7d1a93aa.chunk.js"
   ]
 }
