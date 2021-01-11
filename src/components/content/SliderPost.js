@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import ImageButton from './ImageButton'
-import Icon from './Icon'
-import ArrowRightIcon from '../resource/img/arrow-right.svg'
+import ImageButton from '../ImageButton'
+import Icon from '../Icon'
+import ArrowRightIcon from '../../resource/img/arrow-right.svg'
 
 const SliderPost = ({slideItem}) => {
 

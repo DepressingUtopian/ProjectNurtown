@@ -1,17 +1,17 @@
 import React from 'react';
-import Logo from './Logo';
-import logoImage from '../resource/img/logo_white.svg';
-import Menu from './Menu';
-import TextHeader from './TextHeader';
-import TextWithLogo from './TextWithLogo';
+import Logo from '../Logo';
+import Menu from '../header/Menu';
+import TextHeader from '../TextHeader';
+import TextWithLogo from '../TextWithLogo';
 
-import gpsImage from '../resource/img/gps.svg'
-import phoneImage from '../resource/img/phone.svg'
-import mailImage from '../resource/img/mail.svg'
-import twitterImage from '../resource/img/twitter.svg'
-import pininterestImage from '../resource/img/pininterest.svg'
-import linkedInImage from '../resource/img/linked_in.svg'
-import facebookImage from '../resource/img/facebook.svg'
+import gpsImage from '../../resource/img/gps.svg'
+import phoneImage from '../../resource/img/phone.svg'
+import mailImage from '../../resource/img/mail.svg'
+import twitterImage from '../../resource/img/twitter.svg'
+import pininterestImage from '../../resource/img/pininterest.svg'
+import linkedInImage from '../../resource/img/linked_in.svg'
+import facebookImage from '../../resource/img/facebook.svg'
+import logoImage from '../../resource/img/logo_white.svg';
 
 const Footer = () => {
     return (

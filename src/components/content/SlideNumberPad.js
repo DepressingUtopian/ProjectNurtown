@@ -1,5 +1,5 @@
 import React from 'react';
-import DivideLineIcon from '../resource/img/divideLine.svg'; 
+import DivideLineIcon from '../../resource/img/divideLine.svg'; 
 
 const SlideNumberPad = ({leftNumber, rightNumber}) => {
 
