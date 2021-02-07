@@ -4,7 +4,7 @@ import DivideLineIcon from '../../resource/img/divideLine.svg';
 const SlideNumberPad = ({leftNumber, rightNumber}) => {
 
         const stylesIcon = {
-            background:`url(${DivideLineIcon}) center no-repeat`
+            background:`url(${DivideLineIcon}) center / cover no-repeat`
         };
     
         return (

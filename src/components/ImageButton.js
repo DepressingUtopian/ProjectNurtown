@@ -1,12 +1,17 @@
 import React from 'react';
+import Icon from './Icon'
 
-const ImageButton = ({name, backgroundImage, onClick, content}) => {
-    const className = (name !== undefined) ? name : 'button-image';
+const ImageButton = ({className, backgroundImage, onClick, buttonText, icon}) => {
+    const buttonElem =
+        <>
+            <div className='button__open-post-text'>{buttonText}</div>
+            <Icon backgroundImage={icon}></Icon>
+        </>;
     const styles = {background:(backgroundImage !== undefined) ?
         `url(${backgroundImage}) center no-repeat` : ''};
 
     return (
-        <button className={className} style={styles} onClick={onClick}> {content}</button>
+        <button className={`button-image ${className ? className : ''}`} style={styles} onClick={onClick}> {buttonElem}</button>
     );
 }
 

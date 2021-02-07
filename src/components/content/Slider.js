@@ -45,7 +45,7 @@ const Slider = () => {
         return "0" + (num + 1);
     }
     return (
-        <section className='slider'>
+        <section className='slider block'>
             <SliderHeader />
             <SliderSwitch onChangeSlide={onChangeSlide} slideIndex={currentSlideIndex} />
             <SlideNumberPad leftNumber={normalizeNum(currentSlideIndex)} rightNumber={normalizeNum(slideItems.length - 1)} />

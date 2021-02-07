@@ -18,8 +18,8 @@ const SliderSwitch = ({onChangeSlide, slideIndex}) => {
     };
     return (
         <section className='slider-switch'>
-            <ImageButton backgroundImage={LeftArrowIcon} onClick={goPrevSlide} />
-            <ImageButton backgroundImage={RightArrowIcon} onClick={goNextSlide} />
+            <ImageButton className='slide-button' backgroundImage={LeftArrowIcon} onClick={goPrevSlide} />
+            <ImageButton className='slide-button' backgroundImage={RightArrowIcon} onClick={goNextSlide} />
         </section>
     );
 }
