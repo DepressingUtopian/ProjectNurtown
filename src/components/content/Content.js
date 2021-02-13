@@ -3,6 +3,8 @@ import Slider from './Slider';
 import Post from './Post';
 import Image from '../Image';
 import TextBlock from "../TextBlock";
+import Checkbox  from "../Checkbox";
+
 import p_image_1 from '../../resource/img/post/p_img_1.png';
 import p_image_2 from '../../resource/img/post/p_img_2.png';
 import p_image_3 from '../../resource/img/post/p_img_3.png';
@@ -49,15 +51,11 @@ const Content = () => {
     <div className="inner-content">
       <form>
         <input type='text' placeholder='Имя' />
-        <input type='text' placeholder='Номер телефона' required/>
-        <input type='text' placeholder='E-mail' required/>
+        <input type='text' placeholder='Номер телефона' required />
+        <input type='text' placeholder='E-mail' required />
         <input type='text' placeholder='Интересующий товар/услуга' />
-        <input type='text' className="input-message" placeholder='Сообщение' required/>
-        <div>
-          <input type="checkbox" name="license" />
-          <label for="license">Отправляя заявку Вы соглашаетесь
-          с политикой конфиденциальности</label>
-        </div> 
+        <input type='text' className="input-message" placeholder='Сообщение' required />
+        <Checkbox text="Отправляя заявку Вы соглашаетесь с политикой конфиденциальности"/>
       </form>
       <Image link={contact_us_img} width='749px' height='369px' />
     </div>
@@ -69,8 +67,8 @@ const Content = () => {
       <Slider />
       <Post className="about-company" customCoverBlock={imageList} textHeader='О компании' textDescription={textDescription} link='./' isViewButton={true} buttonText='ЧИТАТЬ' />
       <Post className="main-tasks" textHeader='Основные задачи' customJSXContent={mainTaskPost} />
-      <Post className="our-projects" textHeader='Наши проекты' customJSXContent={mainOurProjects} link='./' isViewButton={true} buttonText='ВСЕ ПРОЕКТЫ'/>
-      <Post className="contact-us" textHeader='Связаться с нами' link='./' customJSXContent={contactUsPost} isViewButton={true} buttonText='ОТПРАВИТЬ'/>
+      <Post className="our-projects" textHeader='Наши проекты' customJSXContent={mainOurProjects} link='./' isViewButton={true} buttonText='ВСЕ ПРОЕКТЫ' />
+      <Post className="contact-us" textHeader='Связаться с нами' link='./' customJSXContent={contactUsPost} isViewButton={true} buttonText='ОТПРАВИТЬ' />
     </section>
   );
 }

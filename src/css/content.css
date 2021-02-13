@@ -1,7 +1,3 @@
-.content {
-    margin-bottom: 90px;
-}
-
 .slider {
     display: flex;
     flex-direction: column;
@@ -133,7 +129,7 @@
   margin-left: auto;
 }
 
-.our-projects .button__open-post .icon {
+.our-projects .button__open-post .icon  {
   background: url(../resource/img/arrow-right_white.svg) center no-repeat;
 }
 
@@ -164,4 +160,8 @@
   background: #333333;
   color:white;
   margin-right: auto;
+}
+
+.contact-us .button__open-post .icon  {
+  background: url(../resource/img/arrow-right_white.svg) center no-repeat;
 }
