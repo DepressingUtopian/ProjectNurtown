@@ -5,6 +5,8 @@ import SlideNumberPad from './SlideNumberPad';
 import SliderPost from './SliderPost';
 import SlideItem from './SlideItem'
 
+import './Slider.scss';
+
 const imageUrls = [
     '/slides/2.jpg',
     '/slides/1.svg',

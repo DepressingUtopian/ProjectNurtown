@@ -1,0 +1,75 @@
+.content {
+    .about-company {
+        background: #FBFBFB;
+        .post__cover {
+            .image-list {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                height: 475px;
+                width: 670px;
+            }
+            .image {
+                margin: 30px 30px 0 0;
+            }
+        }
+        .post__entity {
+            width: 80%;
+        }
+    }
+    .main-tasks {
+        .inner-content {
+            display: flex;
+            margin-top: 40px;
+        }
+        .image {
+            margin-right: 30px;
+            min-width: 120px;
+        }
+    }
+    .our-projects {
+        .inner-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .button__open-post {
+            background: #333333;
+            color: white;
+            margin-left: auto;
+        }
+        .image {
+            margin: 0 30px 30px 0;
+        }
+        .button__open-post {
+            // .icon {
+            //     background: url(../resource/img/arrow-right_white.svg) center no-repeat;
+            // }
+        }
+    }
+    .contact-us {
+        .inner-content {
+            display: flex;
+            flex-direction: row;
+            .image {
+                margin-left: 30px;
+            }
+            .input-message {
+                min-height: 147px;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .button__open-post {
+            background: #333333;
+            color: white;
+            margin-right: auto;
+            // .icon {
+            //     background: url(../resource/img/arrow-right_white.svg) center no-repeat;
+            // }
+        }
+    }
+}

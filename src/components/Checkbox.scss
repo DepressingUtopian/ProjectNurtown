@@ -1,0 +1,31 @@
+.checkbox_with_text {
+  margin-bottom:21px;
+
+  &:hover input[type="checkbox"] ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  input[type="checkbox"]:checked ~ .checkmark {
+    background: #F3F3F3;
+  }
+
+  .checkmark:after {
+    left: 10px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid #333333;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  p {
+    position: relative;
+    width: 331px;
+    left: 40px;
+  }
+}

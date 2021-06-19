@@ -3,6 +3,8 @@ import ImageButton from '../ImageButton'
 import RightArrowIcon from '../../resource/img/arrow-right.svg'
 import LeftArrowIcon from '../../resource/img/arrow-left.svg'
 
+import './SliderSwitch.scss';
+
 const SliderSwitch = ({onChangeSlide, slideIndex}) => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(slideIndex);
     const goNextSlide = () => {

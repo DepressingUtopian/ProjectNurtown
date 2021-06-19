@@ -13,6 +13,8 @@ import linkedInImage from '../../resource/img/linked_in.svg'
 import facebookImage from '../../resource/img/facebook.svg'
 import logoImage from '../../resource/img/logo_white.svg';
 
+import './Footer.scss';
+
 const Footer = () => {
     return (
         <section className="footer">

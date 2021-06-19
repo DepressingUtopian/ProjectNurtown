@@ -1,0 +1,16 @@
+.post {
+  display: flex;
+  height: fit-content;
+  margin: 30px 0 120px 0;
+  .post__entity {
+      position: relative;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      .text-header {
+          color: #BDBDBD;
+          line-height: 64px;
+          font-size: 64px;
+      }
+  }
+}

@@ -2,8 +2,9 @@ import React from 'react';
 import TextHeader from '../TextHeader';
 import TextBlock from '../TextBlock';
 import ImageButton from '../ImageButton';
+import './Post.scss';
 
-const Post = ({className, customCoverBlock, textHeader, textDescription, link, imageStyles, textHeaderStyles, textDescriptionStyles, isViewButton = false, buttonText, customJSXContent }) => {
+const Post = ({className, customCoverBlock, textHeader, textDescription, icon, link, imageStyles, textHeaderStyles, textDescriptionStyles, isViewButton = false, buttonText, customJSXContent }) => {
   return (
     <div className={`post block ${className}`}>
       {customCoverBlock ? <div className="post__cover">
@@ -15,7 +16,7 @@ const Post = ({className, customCoverBlock, textHeader, textDescription, link, i
         <TextHeader text={textHeader} styles={textHeaderStyles} />
         {textDescription ? <TextBlock text={textDescription} styles={textDescriptionStyles} /> : ''}
         {customJSXContent ? customJSXContent : ''}
-        {isViewButton ? <ImageButton className="button__open-post" buttonText={buttonText} styles={textDescriptionStyles} /> : ''}
+        {isViewButton ? <ImageButton className="button__open-post" icon={icon} buttonText={buttonText} styles={textDescriptionStyles} /> : ''}
       </div>
     </div>
   )

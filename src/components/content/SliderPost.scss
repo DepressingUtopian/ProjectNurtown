@@ -1,0 +1,11 @@
+.slider-post {
+  width: 770px;
+  height: 829px;
+  position: relative;
+  & .post-image {
+      height: 829px;
+      position: relative;
+      background-size: cover;
+      display: flex;
+  }
+}

@@ -1,0 +1,12 @@
+.slider-switch {
+    width: 130px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    .slide-button {
+        width: 54px;
+        height: 54px;
+        border: 1px #F2F2F2 solid;
+    }
+}

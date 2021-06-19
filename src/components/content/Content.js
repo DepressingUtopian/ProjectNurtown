@@ -19,9 +19,16 @@ import our_proj_img5 from '../../resource/img/post/our-projects/5.svg';
 
 import contact_us_img from '../../resource/img/post/our-projects/contact_us.png';
 
+
+import ArrowRight from '../../resource/img/arrow-right.svg';
+
+import ArrowRightWhite from '../../resource/img/arrow-right_white.svg';
+
+import './Content.scss';
+
 const Content = () => {
   const imageList = (
-    <div>
+    <div className="image-list">
       <Image link={p_image_1} width='270px' height='265px' />
       <Image link={p_image_2} width='270px' height='140px' />
       <Image link={p_image_3} width='270px' height='345px' />
@@ -65,10 +72,10 @@ const Content = () => {
   return (
     <section className='content'>
       <Slider />
-      <Post className="about-company" customCoverBlock={imageList} textHeader='О компании' textDescription={textDescription} link='./' isViewButton={true} buttonText='ЧИТАТЬ' />
-      <Post className="main-tasks" textHeader='Основные задачи' customJSXContent={mainTaskPost} />
-      <Post className="our-projects" textHeader='Наши проекты' customJSXContent={mainOurProjects} link='./' isViewButton={true} buttonText='ВСЕ ПРОЕКТЫ' />
-      <Post className="contact-us" textHeader='Связаться с нами' link='./' customJSXContent={contactUsPost} isViewButton={true} buttonText='ОТПРАВИТЬ' />
+      <Post icon={ArrowRight} className="about-company" customCoverBlock={imageList} textHeader='О компании' textDescription={textDescription} link='./' isViewButton={true} buttonText='ЧИТАТЬ' />
+      <Post icon={ArrowRight} className="main-tasks" textHeader='Основные задачи' customJSXContent={mainTaskPost} />
+      <Post icon={ArrowRightWhite} className="our-projects" textHeader='Наши проекты' customJSXContent={mainOurProjects} link='./' isViewButton={true} buttonText='ВСЕ ПРОЕКТЫ' />
+      <Post icon={ArrowRightWhite} className="contact-us" textHeader='Связаться с нами' link='./' customJSXContent={contactUsPost} isViewButton={true} buttonText='ОТПРАВИТЬ' />
     </section>
   );
 }

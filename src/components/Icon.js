@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Icon = ({ backgroundImage }) => {
-    const styles = {
-        background: (backgroundImage !== undefined) ?
-            `url(${backgroundImage}) center no-repeat` : ''
-    };
+const Icon = ({ url, width, height, className }) => {
     return (
-        <div className="icon" style={styles}></div>
+      <object className="icon" className={className} type="image/svg+xml" data={url} width={width} height={height} >
+        Your browser does not support SVG
+      </object>
     );
 }
 

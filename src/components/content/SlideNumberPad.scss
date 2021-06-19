@@ -1,0 +1,13 @@
+.slide-number-pad {
+  width: 142px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+
+  .slide-number {
+    color: #BDBDBD;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+  }
+}

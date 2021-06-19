@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ImageButton from '../ImageButton'
 import ArrowRightIcon from '../../resource/img/arrow-right.svg'
 
+import './SliderPost.scss';
+
 const SliderPost = ({slideItem}) => {
 
     const urlToBackgroundStyle = (url) => { return `url(${slideItem.imgCoverUrl}) center / cover no-repeat no-repeat` };
