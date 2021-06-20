@@ -1,5 +1,6 @@
 .checkbox_with_text {
   margin-bottom:21px;
+  position: relative;
 
   &:hover input[type="checkbox"] ~ .checkmark {
     background-color: #ccc;
@@ -13,14 +14,24 @@
     background: #F3F3F3;
   }
 
-  .checkmark:after {
-    left: 10px;
-    top: 6px;
-    width: 5px;
-    height: 10px;
-    border: solid #333333;
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
+  .checkmark {
+    position: absolute; 
+    left: 0;
+    top: 0; 
+    width: 24px;
+    height: 24px;
+    background: #F3F3F3;
+    border-radius: 4px;
+
+    &:after {
+      left: 10px;
+      top: 6px;
+      width: 5px;
+      height: 10px;
+      border: solid #333333;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
   }
 
   p {

@@ -4,12 +4,12 @@ import DivideLineIcon from '../../resource/img/divideLine.svg';
 import './SlideNumberPad.scss';
 import Icon from '../Icon';
 
-const SlideNumberPad = ({leftNumber, rightNumber}) => {
+interface ISlideNumberPadProps {
+  leftNumber: number | string;
+  rightNumber: number | string;
+}
 
-        const stylesIcon = {
-            background:`url(${DivideLineIcon}) center / cover no-repeat`
-        };
-    
+const SlideNumberPad = ({leftNumber, rightNumber}: ISlideNumberPadProps) => {
         return (
             <div className="slide-number-pad">
                 <div className="slide-number">{leftNumber}</div>

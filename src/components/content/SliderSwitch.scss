@@ -8,5 +8,9 @@
         width: 54px;
         height: 54px;
         border: 1px #F2F2F2 solid;
+
+        &:focus {
+          border: 1px #000000 solid;
+        }
     }
 }

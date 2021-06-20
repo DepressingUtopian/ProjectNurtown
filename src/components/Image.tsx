@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Image = ({width, height, link}) => {
+interface IImageProps {
+  width: string;
+  height: string;
+  link: string;
+}
+
+const Image = ({width, height, link}: IImageProps) => {
     const styles = {
         width:width,
         height:height,

@@ -2,7 +2,11 @@ import React from 'react';
 
 import './Checkbox.scss';
 
-const Checkbox = ({text }) => {
+interface ICheckbox {
+  text: string;
+}
+
+const Checkbox = ({ text }: ICheckbox) => {
     return (
       <div className="checkbox_with_text">
       <label>

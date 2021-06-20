@@ -29,14 +29,6 @@ ul {
     list-style-type: none;
 }
 
-button {
-  cursor: pointer;
-}
-
-.button-image .icon {
-  background: url(../resource/img/arrow-right.svg) center no-repeat;
-}
-
 .button__open-post {
     width: 222px;
     height: 71px;
@@ -52,13 +44,6 @@ button {
   background: #333333;
   color: white;
 } */
-
-.button__open-post .icon{
-    width: 24px;
-    height: 24px;
-    margin-left: 12px;
-
-}
 
 .block {
   margin-bottom: 120px;

@@ -73,9 +73,15 @@ const Content = () => {
     <section className='content'>
       <Slider />
       <Post icon={ArrowRight} className="about-company" customCoverBlock={imageList} textHeader='О компании' textDescription={textDescription} link='./' isViewButton={true} buttonText='ЧИТАТЬ' />
-      <Post icon={ArrowRight} className="main-tasks" textHeader='Основные задачи' customJSXContent={mainTaskPost} />
-      <Post icon={ArrowRightWhite} className="our-projects" textHeader='Наши проекты' customJSXContent={mainOurProjects} link='./' isViewButton={true} buttonText='ВСЕ ПРОЕКТЫ' />
-      <Post icon={ArrowRightWhite} className="contact-us" textHeader='Связаться с нами' link='./' customJSXContent={contactUsPost} isViewButton={true} buttonText='ОТПРАВИТЬ' />
+      <Post icon={ArrowRight} className="main-tasks" textHeader='Основные задачи'>
+        {mainTaskPost}
+      </Post>
+      <Post icon={ArrowRightWhite} className="our-projects" textHeader='Наши проекты' link='./' isViewButton={true} buttonText='ВСЕ ПРОЕКТЫ'>
+        {mainOurProjects}
+      </Post>
+      <Post icon={ArrowRightWhite} className="contact-us" textHeader='Связаться с нами' link='./' isViewButton={true} buttonText='ОТПРАВИТЬ'>
+        {contactUsPost}
+      </Post>
     </section>
   );
 }

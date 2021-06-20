@@ -1,5 +1,11 @@
 .button-image {
-    .button__open-post-text {
-        margin-right: 12px;
-    }
+  &:hover {
+    background-color: #f9f9f9;
+  }
+
+  .button__open-post-text {
+    margin-right: 12px;
+  }
+
+  cursor: pointer;
 }

@@ -2,7 +2,12 @@ import React from 'react';
 
 import './TextHeader.scss';
 
-const TextHeader = ({styles, text}) => {
+interface ITextHeaderProps {
+  styles?: React.CSSProperties;
+  text?: string;
+}
+
+const TextHeader = ({styles, text}: ITextHeaderProps) => {
     return (<div className="text-header" style={styles}>{text}</div>);
 }
 

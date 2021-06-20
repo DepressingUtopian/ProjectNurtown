@@ -24,26 +24,6 @@ input[type="checkbox"] {
   width: 24px;
 }
 
-.checkbox_with_text {
-  position: relative;
-}
-
-.checkmark {
-  position: absolute; 
-  left: 0;
-  top: 0; 
-  width: 24px;
-  height: 24px;
-  background: #F3F3F3;
-  border-radius: 4px;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
 p {
   font-weight: normal;
   font-size: 14px;
