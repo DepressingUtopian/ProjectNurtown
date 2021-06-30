@@ -1,20 +1,24 @@
 import React from 'react';
 
+import './Image.scss';
+
 interface IImageProps {
-  width: string;
-  height: string;
+  className?: string;
+  width?: string;
+  height?: string;
   link: string;
+  styles?: React.CSSProperties;
 }
 
-const Image = ({width, height, link}: IImageProps) => {
-    const styles = {
+const Image = ({className, width, height, link, styles}: IImageProps) => {
+    const customStyles = {
         width:width,
         height:height,
-        background:`url(${link}) center no-repeat`
-
+        backgroundImage:`url(${link})`,
+        ...styles
     };
     return(
-        <div className='image' style={styles}/>
+        <div className={`image ${className ? className : ''}`} style={customStyles} />
     )
 }
 

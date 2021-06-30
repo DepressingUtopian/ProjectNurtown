@@ -1,0 +1,34 @@
+.our-projects {
+  width: 100%;
+  .post-content {
+    width: 100%;
+    .our-projects-images {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      width: 100%;
+      .images-group {
+        display: flex;
+        width: 100%;
+        .image {
+          margin: 0 30px 30px 0;
+          background-size: cover;
+          flex: 2 0 470px;
+          min-height: 255px;
+
+          &:last-child {
+            margin: 0 0 30px 0;
+          }
+
+          &.small {
+            flex: (2 * 270 / 470) 0 270px;
+          }
+        }
+
+      }
+    }
+  }
+  .button-image {
+    margin-left: auto;
+  }
+}

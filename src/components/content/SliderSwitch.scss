@@ -8,9 +8,14 @@
         width: 54px;
         height: 54px;
         border: 1px #F2F2F2 solid;
+        background: #FFFFFF;
 
-        &:focus {
-          border: 1px #000000 solid;
+        &:hover {
+          background: #F9F9F9;
+        }
+
+        .icon {
+          margin: auto;
         }
     }
 }

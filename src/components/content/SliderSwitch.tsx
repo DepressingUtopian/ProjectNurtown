@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ImageButton from '../ImageButton'
 import RightArrowIcon from '../../resource/img/arrow-right.svg'
 import LeftArrowIcon from '../../resource/img/arrow-left.svg'
+import useInterval from '../../hooks/useInterval';
 
 import './SliderSwitch.scss';
 
@@ -13,12 +14,6 @@ interface ISliderSwitch {
 const SliderSwitch = ({ onChangeSlide, slideIndex }: ISliderSwitch) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(slideIndex);
 
-  useEffect(() => {
-    const timerId = setInterval(() => goNextSlide(), 6000);
-
-    // return () => clearInterval(timerId);
-  }, []);
-
   const goNextSlide = () => {
     const newIndex = onChangeSlide(currentSlideIndex + 1)
     setCurrentSlideIndex(newIndex);
@@ -28,11 +23,26 @@ const SliderSwitch = ({ onChangeSlide, slideIndex }: ISliderSwitch) => {
     const newIndex = onChangeSlide(currentSlideIndex - 1)
     setCurrentSlideIndex(newIndex);
   };
+
+  const { stopInterval, restartInterval } = useInterval(() => goNextSlide(), 6000);
+
   return (
-    <section className='slider-switch'>
-      <ImageButton className='slide-button' icon={LeftArrowIcon} onClick={goPrevSlide} />
-      <ImageButton className='slide-button' icon={RightArrowIcon} onClick={goNextSlide} />
-    </section>
+    <div className='slider-switch'>
+      <ImageButton 
+        className='slide-button' 
+        icon={LeftArrowIcon}
+        onClick={() => {
+          goPrevSlide();
+          restartInterval && restartInterval();
+        }} />
+      <ImageButton 
+        className='slide-button'
+        icon={RightArrowIcon}
+        onClick={() => {
+          goNextSlide();
+          restartInterval && restartInterval();
+          }} />
+    </div>
   );
 }
 

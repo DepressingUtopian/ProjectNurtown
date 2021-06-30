@@ -7,12 +7,12 @@ import Icon from '../Icon';
 import './Header.scss';
 
 const Header = () => {
-    return (
-        <section className='header'>
-            <Icon className="siteLogo" url={logoImage} width={70} height={44}/>
-            <Menu />
-        </section>
-    );
+  return (
+    <header className='header'>
+      <Icon className="siteLogo" url={logoImage} />
+      <Menu />
+    </header>
+  );
 }
 
 export default Header;

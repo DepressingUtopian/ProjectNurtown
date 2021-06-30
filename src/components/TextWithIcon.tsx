@@ -10,7 +10,7 @@ interface ITextWithIcon {
 
 const TextWithIcon = ({className, stylesText, iconProps, text}: ITextWithIcon) => {
     return (
-        <div className="text-with-logo">
+        <div className={`text-with-logo${className ? " " + className : ''}`}>
             <Icon {...iconProps}/>
             <div className="text" style={stylesText}>{text}</div>
         </div>

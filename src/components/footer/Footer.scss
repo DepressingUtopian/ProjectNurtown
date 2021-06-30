@@ -2,6 +2,7 @@
   background-color: #2C2C2C;
   display: grid;
   grid-template-rows: 1fr 70px;
+
   & .footer--bar {
     display: flex;
     box-sizing: border-box;
@@ -24,6 +25,7 @@
     }
 
     .menu {
+      padding: 0;
       & ul {
         display: flex;
         flex-direction: column;
@@ -42,6 +44,7 @@
     & .text-with-logo {
       display: flex;
       margin-bottom: 32px;
+      align-items: center;
     }
   }
 
@@ -51,6 +54,10 @@
     & .social-panel {
       display: flex;
       justify-content: space-between;
+
+      .icon:hover {
+        animation: iconactive 0.4s ease-in-out infinite;
+      }
     }
   }
 
@@ -65,5 +72,20 @@
     & .footer--copyright__text {
       color:rgba(200, 200, 200, 0.5);
     }
+  }
+}
+
+@keyframes iconactive {
+  from {
+    
+  }
+  25% {
+    transform: translateY(4px)
+  }
+  75% {
+    transform: translateY(-4px)
+  }
+  to {
+   
   }
 }

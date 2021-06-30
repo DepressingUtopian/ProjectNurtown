@@ -23,7 +23,7 @@ const SliderPost = ({ slideItem }: ISliderPost) => {
   return (
     <div className="slider-post">
       <div className='post-image' style={{ background: background }}>
-        <ImageButton className="button__open-post" buttonText="ВЗГЛЯНУТЬ" icon={ArrowRightIcon}></ImageButton>
+        <ImageButton className="button-open-post" buttonText="ВЗГЛЯНУТЬ" icon={ArrowRightIcon}></ImageButton>
       </div>
     </div>
   );

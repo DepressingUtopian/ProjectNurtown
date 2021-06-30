@@ -1,15 +1,14 @@
 .slider-post {
-  width: 770px;
-  height: 829px;
   position: relative;
+  flex: 6 0 770px;
   & .post-image {
-      height: 829px;
-      position: relative;
-      background-size: cover;
-      display: flex;
-      animation-duration: 3s;
-      animation-name: appearance;
-      transition: background-image 1s ease-in-out;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    animation-duration: 3s;
+    animation-name: appearance;
+    transition: background-image 1s ease-in-out;
   }
 }
 

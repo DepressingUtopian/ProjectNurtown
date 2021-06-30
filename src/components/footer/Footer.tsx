@@ -17,7 +17,7 @@ import Icon from '../Icon';
 
 const Footer = () => {
   return (
-    <section className="footer">
+    <footer className="footer">
       <section className="footer--bar">
         <Icon className="siteLogo" width={170} height={94} styles={{ margin: "0 0 0 116px" }} url={logoImage} />
         <div className="footer-menu">
@@ -55,7 +55,7 @@ const Footer = () => {
       <section className="footer--copyright">
         <p className="footer--copyright__text">© {new Date().getFullYear()} Digital Project || DepressingUtopian. Все права защищены.</p>
       </section>
-    </section>
+    </footer>
   );
 }
 

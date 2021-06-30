@@ -4,6 +4,12 @@
   justify-content: space-between;
   align-items: center;
 
+  .siteLogo {
+    min-width: 70px;
+    min-height: 44px;
+    height: 64%;
+  }
+
   .menu {
     li {
       &:first-child {

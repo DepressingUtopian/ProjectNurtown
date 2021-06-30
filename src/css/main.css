@@ -1,10 +1,11 @@
 .main {
     display: grid;
-    grid-template-rows: 102px 1fr 417px;
-    grid-template-columns: 135px 1fr 135px;
+    grid-template-rows: minmax(102px, 4vh) 1fr minmax(417px, 6vh);
+    grid-template-columns: minmax(135px, 1vw) 1fr minmax(135px, 1vw);
     grid-template-areas: " . header  ."
                          " . content ."
                          "footer footer footer";
+    max-width: 2560px;
 }
 
 a {
@@ -29,7 +30,7 @@ ul {
     list-style-type: none;
 }
 
-.button__open-post {
+.button-open-post {
     width: 222px;
     height: 71px;
     background: white;

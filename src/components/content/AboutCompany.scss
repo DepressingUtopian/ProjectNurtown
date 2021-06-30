@@ -1,0 +1,33 @@
+.about-company {
+  background: #fafafa;
+  min-height: 435px;
+  padding: 30px;
+  box-sizing: content-box;
+  .post-cover {
+    .about-company-cover {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      min-width: 670px;
+      .images-group {
+        flex: 1 0;
+        display: flex;
+        flex-direction: column;
+        .image {
+          margin: 30px 30px 0 0;
+          flex: 1 0 270px;
+          background-size: cover;
+        }
+      }
+
+      // .image:last-child {
+      //   margin: 0 30px 30px 0;
+      // }
+    }
+  }
+  .post-entity {
+    width: 80%;
+  }
+}

@@ -19,13 +19,11 @@ const imageUrls = [
 
 const Slider = () => {
   const slideItems: SlideItem[] = [];
-  const initSlideItems = () => {
-    imageUrls.forEach(element => {
-      slideItems.push(new SlideItem(process.env.PUBLIC_URL + element, '#'));
-    });
-  }
 
-  initSlideItems();
+  imageUrls.forEach(element => {
+    slideItems.push(new SlideItem(process.env.PUBLIC_URL + element, '#'));
+  });
+
   const [currentSlideItem, setCurrentSlideItem] = useState(slideItems[0]);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
@@ -47,12 +45,14 @@ const Slider = () => {
     return "0" + (num + 1);
   }
   return (
-    <section className='slider block'>
-      <SliderHeader />
-      <SliderSwitch onChangeSlide={onChangeSlide} slideIndex={currentSlideIndex} />
-      <SlideNumberPad leftNumber={normalizeNum(currentSlideIndex)} rightNumber={normalizeNum(slideItems.length - 1)} />
-      <SliderPost slideItem={currentSlideItem} />
-    </section>
+    <div className='slider block'>
+      <div className='slider-main'>
+        <SliderHeader />
+        <SliderSwitch onChangeSlide={onChangeSlide} slideIndex={currentSlideIndex} />
+        <SlideNumberPad leftNumber={normalizeNum(currentSlideIndex)} rightNumber={normalizeNum(slideItems.length - 1)} />
+      </div>
+      <SliderPost slideItem={currentSlideItem} />    
+    </div>
   );
 }
 
